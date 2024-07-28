@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Card, Typography } from '@mui/material';
+import { Typography } from '@mui/material';
 
 const Home = () => {
     return (
