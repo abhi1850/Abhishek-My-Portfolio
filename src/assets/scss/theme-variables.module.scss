@@ -1,0 +1,63 @@
+//variables
+$appFontSize: 1.125rem;
+$headerHeight: clamp(60px, 8vh, 70px);
+$sideBarWidth: clamp(66px, 5vw, 100px);
+$gridGap: 15px;
+
+
+$themes: (
+  appBackgroundColor: #f3f3f3,
+  primaryMain : #01468E,
+  primaryLight : #F7A800,
+  secondaryMain : #DFEFFF,
+  colorGrey : #A7A6A6,
+  colorDarkGrey : #A4A4A4,
+  colorWhite : #ffffff,
+  colorWhitesmoke : #f3f3f3,
+  oldSilverGrey : #838383,
+  pipelineCompleted : #3E9F42,
+  pipelineInactive : #CCCCCC,
+  pipelineBordermode : #eaeaf0,
+  pipelineOwnerstate : #784af4,
+  arrowYellow: #FFEFCE,
+  failedRed: #EF0202,
+  pdfRed: #F40F02,
+  newstreetRed:#E8152A,
+  shecomPink: #E1278A,
+  successGreen: #D7FFD8,
+  colorBlack : #000000,
+  platinum : #E1E1E1,
+  positiveGreen : #00B200,
+  negativeRed : #D21113,
+  navigateIcons : #E9F3FD,
+  downloadLink : #759AC1,
+  whiteSmokeLight : #efefef,
+  colorOrange : #F1A634,
+  superBlack : #1F1500,
+  primaryGreen : #27ae61,
+  colorBlue : #00488E,
+  reject : #d32f2f,
+  secondaryGreen : #26922B,
+  pinkSwan : #B4B4B4,
+  disableButtonBgColor : #D9D9D9,
+  disableButtonColor : #A4A4A4,
+  secondaryOrange : #FFEBCC,
+  mainGrey : #dddddd
+);
+
+:root {
+  @each $color, $value in $themes {
+    --#{$color}: #{$value};
+  }
+}
+
+
+// Export theme colors to JS
+// name of color variable will in the format - colorName+themeMode(light/dark)
+:export {
+
+  @each $key, $value in $themes {
+    #{unquote($key)}: $value;
+  }
+
+}
