@@ -62,7 +62,6 @@ const theme = createTheme({
     typography: {
         fontSize: 16,
         fontWeight: 400,
-        fontFamily: 'Poppins',
     },
     spacing: (factor) => `${0.25 * factor}rem`, // Custom spacing function
     components: {

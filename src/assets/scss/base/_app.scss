@@ -1,15 +1,6 @@
 @use '../core/variables' as *;
 @use '../theme-variables.module.scss' as *;
 
-// Normalize.css or CSS Reset
-@import 'normalize.css';
-
-@font-face {
-    font-family: $body-font;
-    src:
-        local('Poppins'),
-        url('./fonts/Poppins-Regular.ttf') format('truetype');
-}
 .flex-center {
     min-height: 100vh;
     display: flex;
@@ -17,31 +8,30 @@
     align-items: center;
     justify-content: center;
 }
+
 .center {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-// Global Styles
 html {
     overflow: hidden;
     font-size: 12px;
 }
-*,
+
 body {
-    font-family: $body-font;
     font-size: 12px;
     margin: 0;
     padding: 0;
     user-select: none;
     scrollbar-width: thin;
 
-    :hover {
-        scrollbar-color: #888 #ddd;
+    // /* Define the scrollbar thumb and track styles */
+    ::-webkit-scrollbar {
+        width: 5px;
+        height: 5px; /* Width of the scrollbar */
     }
-
-    /* Define the scrollbar thumb and track styles */
 
     ::-webkit-scrollbar-thumb {
         background-color: #e1dbdb; /* Color of the scrollbar thumb */
