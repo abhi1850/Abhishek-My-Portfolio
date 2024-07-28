@@ -1,0 +1,29 @@
+.drawer-block {
+    padding: 0 1.5rem 0 1.5rem;
+}
+
+.drawer-head {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+}
+
+.drawer-body {
+    height: calc(100vh - 91px);
+    overflow-y: scroll;
+}
+
+.drawer-list-item {
+    padding-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.accordian-summary-wrapper > div {
+    align-items: center;
+    margin: 0.45rem 0;
+    cursor: auto;
+}

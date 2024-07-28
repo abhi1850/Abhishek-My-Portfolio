@@ -1,0 +1,44 @@
+@use '../theme-variables.module.scss' as *;
+
+$auditHeaderHeight: 50px;
+$auditPaginationHeight: 50px;
+$auditGridGap: 10px;
+
+.audit-containter {
+    display: grid;
+    grid-template-columns: minmax(250px,1fr) minmax(400px,4fr) ;
+    grid-template-rows: $auditHeaderHeight 1fr  $auditPaginationHeight;
+    border: 2px solid rgb(197, 191, 202);
+    height: calc(100vh - $headerHeight - 2 * $gridGap );
+    width: calc(100vw - $sideBarWidth - 2 * $gridGap );
+    grid-gap: $auditGridGap;
+    
+}
+
+.audit-header {
+    background-color: transparent;
+    grid-area: 1/1/2/3;
+    display: flex;
+    align-items: center;
+}
+
+.audit-filter {
+    background-color: var(--colorWhite);
+    grid-area: 2/1/3/2;
+    height: calc(100vh - $headerHeight - 2 * $gridGap - 2 * $auditGridGap - 105px);
+    margin-top: 1vh;
+}
+
+.audit-group-list {
+ background-color: var(--colorWhite);
+ grid-area: 2/2/3/3;
+ height: calc(100vh - $headerHeight - 2 * $gridGap - 2 * $auditGridGap - 105px);
+ margin-top: 1vh;
+}
+
+.audit-pagination {
+    grid-area: 3/2/4/3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
