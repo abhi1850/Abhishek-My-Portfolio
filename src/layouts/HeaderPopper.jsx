@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom'; // Import useNavigate for routing
 
 import { Grid, IconButton } from '@mui/material';
 import { Box } from '@mui/system';
@@ -16,9 +17,11 @@ const headerWrapperStyle = {
 
 const HeaderPopper = () => {
     const [open, setOpen] = React.useState(false);
+    const navigate = useNavigate(); // Initialize the navigate function
 
-    const handleClick = () => {
-        setOpen(!open);
+    const handleClick = (path) => {
+        navigate(path); // Use navigate to change routes
+        setOpen(!open); // Optional: toggle state if needed
     };
 
     return (
@@ -28,11 +31,11 @@ const HeaderPopper = () => {
                     <IconButton
                         sx={{
                             cursor: 'pointer',
-                            color: '#FFFFFF', // Text color white
-                            padding: '10px 20px', // Padding around the icon and text
+                            color: '#FFFFFF',
+                            padding: '10px 20px',
                         }}
-                        aria-label="about"
-                        onClick={handleClick}
+                        aria-label="home"
+                        onClick={() => handleClick('/Home')}
                     >
                         Home
                     </IconButton>
@@ -41,11 +44,11 @@ const HeaderPopper = () => {
                     <IconButton
                         sx={{
                             cursor: 'pointer',
-                            color: '#FFFFFF', // Text color white
-                            padding: '10px 20px', // Padding around the icon and text
+                            color: '#FFFFFF',
+                            padding: '10px 20px',
                         }}
                         aria-label="about"
-                        onClick={handleClick}
+                        onClick={() => handleClick('/About')}
                     >
                         About
                     </IconButton>
@@ -54,11 +57,11 @@ const HeaderPopper = () => {
                     <IconButton
                         sx={{
                             cursor: 'pointer',
-                            color: '#FFFFFF', // Text color white
-                            padding: '10px 20px', // Padding around the icon and text
+                            color: '#FFFFFF',
+                            padding: '10px 20px',
                         }}
                         aria-label="projects"
-                        onClick={handleClick}
+                        onClick={() => handleClick('/Projects')}
                     >
                         Projects
                     </IconButton>
@@ -67,11 +70,11 @@ const HeaderPopper = () => {
                     <IconButton
                         sx={{
                             cursor: 'pointer',
-                            color: '#FFFFFF', // Text color white
-                            padding: '10px 20px', // Padding around the icon and text
+                            color: '#FFFFFF',
+                            padding: '10px 20px',
                         }}
                         aria-label="experience"
-                        onClick={handleClick}
+                        onClick={() => handleClick('/Experience')}
                     >
                         Experience
                     </IconButton>
@@ -80,11 +83,11 @@ const HeaderPopper = () => {
                     <IconButton
                         sx={{
                             cursor: 'pointer',
-                            color: '#FFFFFF', // Text color white
-                            padding: '10px 20px', // Padding around the icon and text
+                            color: '#FFFFFF',
+                            padding: '10px 20px',
                         }}
                         aria-label="contact"
-                        onClick={handleClick}
+                        onClick={() => handleClick('/Contact')}
                     >
                         Contact
                     </IconButton>

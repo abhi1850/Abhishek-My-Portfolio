@@ -15,21 +15,6 @@ const Home = () => {
             <Typography sx={{ fontSize: '2rem' }}>
                 Home screen in the window
             </Typography>
-            <Card
-                sx={{ height: '50vh', width: '20vh', overflow: 'auto    ' }}
-                elevation={5}
-            >
-                Hello in Card nkjsdnckdnds dsjnsdkj Hello in Card nkjsdnckdnds
-                dsjnsdkj Hello in Card nkjsdnckdnds dsjnsdkj Hello in Card
-                nkjsdnckdnds dsjnsdkj Hello in Card nkjsdnckdnds dsjnsdkj Hello in
-                Card nkjsdnckdnds dsjnsdkj Hello in Card nkjsdnckdnds dsjnsdkj Hello
-                in Card nkjsdnckdnds dsjnsdkj Hello in Card nkjsdnckdnds dsjnsdkj
-                Hello in Card nkjsdnckdnds dsjnsdkj Hello in Card nkjsdnckdnds
-                dsjnsdkj Hello in Card nkjsdnckdnds dsjnsdkj Hello in Card
-                nkjsdnckdnds dsjnsdkj Hello in Card nkjsdnckdnds dsjnsdkj Hello in
-                Card nkjsdnckdnds dsjnsdkj Hello in Card nkjsdnckdnds dsjnsdkj Hello
-                in Card nkjsdnckdnds dsjnsdkj
-            </Card>
         </div>
     );
 };
