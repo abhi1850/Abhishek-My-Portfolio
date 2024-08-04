@@ -4,7 +4,7 @@ import { defineConfig } from 'vite';
 
 export default defineConfig({
     plugins: [react()],
-    base: '/Abhishek-My-Portfolio/',
+    base: '/abhishek-my-portfolio/',
     host: '0.0.0.0',
     resolve: {
         alias: {
