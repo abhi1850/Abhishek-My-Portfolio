@@ -1,5 +1,4 @@
 {
-    "homepage": "https://abhi1850.github.io/Abhishek-My-Portfolio",
     "name": "abhishek-my-portfolio",
     "private": true,
     "version": "0.0.0",
@@ -45,5 +44,6 @@
         "sass": "^1.77.6",
         "vite": "^5.3.4",
         "vite-plugin-eslint": "^1.8.1"
-    }
+    },
+    "homepage": "https://abhi1850.github.io/Abhishek-My-Portfolio"
 }
