@@ -1,5 +1,5 @@
 import { Suspense } from 'react';
-import { Navigate } from 'react-router-dom'; // Import Navigate for redirection
+import { Navigate } from 'react-router-dom';
 
 import About from './Components/About';
 import Contact from './Components/Contact';
